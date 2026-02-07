@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="_1admissionform.css">
+        
+         <title>Form Creation</title>
+
+
+    </head>
+    <body>
+        <form>
+            <h2>STUDENT ADMISSION FORM</h2>
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label>Full Name</label><br>
+                <input type="text" autofocus placeholder="Enter your full name" required><br>
+
+                <label>Email</label><br>
+                <input type="email" placeholder="Enter your email" required><br>
+
+                <label>Password</label><br>
+                <input type="password" placeholder="Enter your password" required><br>
+
+                <label>Phone Number</label><br> 
+                <input type="tel" pattern="[0-9]{10}" placeholder="Enter 10 digit number" required><br>
+
+                <label>Date of Birth</label><br>
+                <input type="date" required><br>
+
+                <label>Age</label><br>
+                <input type="number" min="1" max="100" placeholder="Enter your age" required>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Academic Details</legend>
+
+                <label>Course</label>
+                <select required>
+                    <option value="">Select your course</option>
+                    <option>BCA</option>
+                    <option>BSc</option>
+                    <option>BCom</option>
+                    <option>BA</option>
+                </select><br>
+
+                <label>Branch</label>
+                <input type="text" list="branches">
+                <datalist id="branches">
+                    <option>CSE</option>
+                    <option>IT</option>
+                    <option>ECE</option>
+                    <option>AIDS</option>
+                </datalist><br>
+
+                <label>Percentage</label>
+                <input type="range" min="20" max="100" required><br>
+
+            </fieldset>
+
+
+            <fieldset>
+              <legend>Preference</legend>
+
+              <label>Gender</label>
+                <input type="radio" name="gender">Male
+                <input type="radio" name="gender">Female
+
+                <br>
+                <label>Languages Known</label>
+                <input type="checkbox">English
+                <input type="checkbox">Hindi
+                <input type="checkbox">Bengali
+                <input type="checkbox">sanskarit
+                <br>
+
+                <label>Upload Photo</label><br>
+                <input type="file" required>
+
+                <label>comments </label>
+                <textarea rows="4" cols="30" placeholder="Enter your comments here..."></textarea><br>
+                <label>Submit Form</label>
+                <button type="submit">Submit</button>
+                <button type="cancle">cancle</button>
+            </fieldset>
+        </form>
+
+    </body>
+</html>
